@@ -37,30 +37,22 @@ class SLL {
     
 
 
-    display(myNumArr) {
-        var myNumArr = [10, 20, 29, 34, 56, 48, 93, 100]
-        if (this.head) {
+    display() {
+                if (this.head) {
             var nodeVals = ""; //output
             var runner = this.head;
             while (runner) {
                 nodeVals += runner.value + ", ";
                 runner = runner.next;
-
-                //nodeVals += null;
+            }
+                nodeVals += null;
+                return nodeVals;
 
             }
             return nodeVals;
         }
-    }
-    length(arr) {
-        var runner = this.head;
-        var numNodes = 0;
-        while(runner) {
-            numNodes++;
-            runner = runner.next;
-        }
-        return numNodes;
-    }
+    
+   
 }
 
 var myLinkedList = new SLL();
@@ -72,4 +64,3 @@ for (var i = 0; i < myNumArr.length; i++) {
 }
 
 console.log(myLinkedList.display())
-console.log(myLinkedList.length())

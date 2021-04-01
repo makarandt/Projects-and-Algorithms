@@ -44,4 +44,4 @@ for (var i = 0; i < myNumArr.length; i++) {
 }
 
 
-console.log("length= "myLinkedList.length())
+console.log("length= "myLinkedList.length());
